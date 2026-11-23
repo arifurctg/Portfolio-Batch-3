@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MD Arifur Rahaman – Senior Software Engineer</title>
+<meta name="description" content="Portfolio of MD Arifur Rahaman, Senior Software Engineer with 7 years of experience in Python, HTMX, HTML, CSS and Excel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { paper: 'var(--paper)', cell: 'var(--cell)', ink: 'var(--ink)', mute: 'var(--mute)', line: 'var(--line)', green: 'var(--green)', gold: 'var(--gold)' },
+    fontFamily: { display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'], body: ['Figtree', 'system-ui', 'sans-serif'] }
+  } }
+}
+</script>
+<style>
+:root{--paper:#f2f5ef;--cell:#ffffff;--ink:#15231b;--mute:#5a6a5f;--line:#cfd9cc;--green:#1d6f42;--gold:#f2c230;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0f1712;--cell:#17231b;--ink:#e8f0e9;--mute:#9bad9f;--line:#2b3b30;--green:#4fc283;--gold:#f2c230;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0f1712;--cell:#17231b;--ink:#e8f0e9;--mute:#9bad9f;--line:#2b3b30;--green:#4fc283;--gold:#f2c230;color-scheme:dark}
+html{scroll-padding-top:calc(4.5rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:Figtree,system-ui,sans-serif}
+.sheet{border:1px solid var(--line);background:var(--cell)}
+.sheet .r{display:grid;grid-template-columns:2.25rem 1fr}
+.sheet .r+.r{border-top:1px solid var(--line)}
+.sheet .n{border-right:1px solid var(--line);background:var(--paper);color:var(--mute);font-size:.75rem;display:flex;align-items:center;justify-content:center}
+.sheet .c{padding:.75rem 1rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+a:focus-visible,button:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+</style>
+</head>
+<body class="font-body antialiased">
+
+<header class="sticky top-0 z-20 border-b border-line bg-paper/90 backdrop-blur" style="padding-top:env(safe-area-inset-top,0px)">
+  <nav class="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
+    <a href="#top" class="font-display text-lg font-bold">Arifur Rahaman</a>
+    <div class="hidden gap-6 text-sm text-mute sm:flex">
+      <a class="hover:text-ink" href="#about">About</a>
+      <a class="hover:text-ink" href="#skills">Skills</a>
+      <a class="hover:text-ink" href="#work">Work</a>
+      <a class="hover:text-ink" href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="rounded-md bg-green px-3 py-1.5 text-sm font-semibold text-paper">Hire me</a>
+  </nav>
+</header>
+
+<main id="top" class="mx-auto max-w-5xl px-5">
+
+  <!-- HERO: a spreadsheet -->
+  <section class="py-14 sm:py-20">
+    <div class="sheet overflow-hidden rounded-lg">
+      <div class="r" style="background:var(--paper)">
+        <div class="n"></div>
+        <div class="grid grid-cols-3 text-center text-xs text-mute">
+          <div class="py-1.5">A</div><div class="border-l border-line py-1.5">B</div><div class="border-l border-line py-1.5">C</div>
+        </div>
+      </div>
+      <div class="r"><div class="n">1</div><div class="c"><p class="text-sm text-mute">Name</p><h1 class="font-display text-4xl font-extrabold leading-tight sm:text-6xl">MD Arifur Rahaman</h1></div></div>
+      <div class="r"><div class="n">2</div><div class="c"><p class="text-sm text-mute">Role</p><p class="font-display text-xl font-bold sm:text-2xl">Senior Software Engineer</p></div></div>
+      <div class="r"><div class="n">3</div><div class="c"><p class="text-sm text-mute">Summary</p><p class="max-w-xl text-lg leading-relaxed">I have spent 7 years building web apps and data tools with Python, HTMX, HTML, CSS and Excel. I like simple, fast software that people actually enjoy using.</p></div></div>
+      <div class="r"><div class="n">4</div><div class="c flex flex-wrap gap-3">
+        <a href="#work" class="rounded-md bg-green px-4 py-2 font-semibold text-paper">See my work</a>
+        <a href="#contact" class="rounded-md border border-line px-4 py-2 font-semibold hover:border-green">Get in touch</a>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="grid gap-8 border-t border-line py-14 md:grid-cols-[1fr_2fr]">
+    <h2 class="font-display text-3xl font-bold">About me</h2>
+    <div class="space-y-4 text-lg leading-relaxed text-mute">
+      <p>I’m Arifur, a software engineer who turns messy business processes into clean, reliable tools. Most of my work sits between a Python back end and a lightweight, server-rendered front end.</p>
+      <p>I prefer HTMX over heavy JavaScript frameworks when the job allows it: fewer moving parts, faster pages and code that is easy to hand over. Excel is still part of many teams’ daily work, so I build tools that read, clean and produce spreadsheets people already trust.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="border-t border-line py-14">
+    <h2 class="font-display text-3xl font-bold">Skills</h2>
+    <div class="sheet mt-8 overflow-x-auto rounded-lg">
+      <table class="w-full min-w-[34rem] border-collapse text-left">
+        <thead class="bg-paper text-sm text-mute"><tr><th class="px-4 py-2 font-medium">Tool</th><th class="border-l border-line px-4 py-2 font-medium">What I use it for</th></tr></thead>
+        <tbody class="[&>tr]:border-t [&>tr]:border-line [&_td]:px-4 [&_td]:py-3 [&_td+td]:border-l [&_td+td]:border-line">
+          <tr><td class="font-display font-bold">Python</td><td class="text-mute">Back-end services, automation scripts, data processing and reporting.</td></tr>
+          <tr><td class="font-display font-bold">HTMX</td><td class="text-mute">Interactive pages straight from the server, with no front-end build step.</td></tr>
+          <tr><td class="font-display font-bold">HTML</td><td class="text-mute">Semantic, accessible markup that works on every device.</td></tr>
+          <tr><td class="font-display font-bold">CSS &amp; Tailwind</td><td class="text-mute">Responsive layouts and consistent design systems.</td></tr>
+          <tr><td class="font-display font-bold">Excel</td><td class="text-mute">Formulas, import and export, and automated reports for business teams.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="border-t border-line py-14">
+    <h2 class="font-display text-3xl font-bold">Selected work</h2>
+    <p class="mt-2 text-mute">Replace these examples with your real projects.</p>
+    <div class="mt-8 grid gap-5 md:grid-cols-3">
+      <article class="sheet rounded-lg p-5">
+        <h3 class="font-display text-xl font-bold">Reporting dashboard</h3>
+        <p class="mt-2 text-mute">Python reads daily Excel files and shows live totals and charts in the browser.</p>
+        <p class="mt-4 text-sm font-semibold text-green">Python · HTMX · Tailwind</p>
+      </article>
+      <article class="sheet rounded-lg p-5">
+        <h3 class="font-display text-xl font-bold">Excel automation tool</h3>
+        <p class="mt-2 text-mute">Cleans messy spreadsheets and exports a ready-to-send report in one click.</p>
+        <p class="mt-4 text-sm font-semibold text-green">Python · Excel</p>
+      </article>
+      <article class="sheet rounded-lg p-5">
+        <h3 class="font-display text-xl font-bold">Internal admin panel</h3>
+        <p class="mt-2 text-mute">Searchable tables and forms that update without a full page reload.</p>
+        <p class="mt-4 text-sm font-semibold text-green">HTMX · HTML · CSS</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="border-t border-line py-14">
+    <h2 class="font-display text-3xl font-bold">Experience</h2>
+    <ol class="mt-8 space-y-6 border-l-2 border-green pl-6">
+      <li>
+        <h3 class="font-display text-xl font-bold">Senior Software Engineer</h3>
+        <p class="text-sm text-mute">Add your company and dates</p>
+        <p class="mt-2 max-w-2xl text-mute">Lead development of Python web applications, review code and mentor other developers.</p>
+      </li>
+      <li>
+        <h3 class="font-display text-xl font-bold">Software Engineer</h3>
+        <p class="text-sm text-mute">Add your company and dates</p>
+        <p class="mt-2 max-w-2xl text-mute">Built features, data tools and reports with Python, HTML, CSS and Excel.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="border-t border-line py-14">
+    <div class="rounded-lg bg-green p-8 text-paper sm:p-12">
+      <h2 class="font-display text-3xl font-bold sm:text-4xl">Let’s build something useful</h2>
+      <p class="mt-3 max-w-xl text-lg opacity-90">Have a project or a role in mind? Send me a message and I’ll reply soon.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="mailto:your-email@example.com" class="rounded-md bg-gold px-5 py-2.5 font-semibold text-[#15231b]">Email me</a>
+        <a href="https://www.linkedin.com/" class="rounded-md border border-paper/50 px-5 py-2.5 font-semibold">LinkedIn</a>
+        <a href="https://github.com/" class="rounded-md border border-paper/50 px-5 py-2.5 font-semibold">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-line py-6 text-center text-sm text-mute">
+  © <span id="y">2026</span> MD Arifur Rahaman
+</footer>
+<script>try{document.getElementById('y').textContent=new Date().getFullYear()}catch(e){}</script>
+</body>
+</html>
